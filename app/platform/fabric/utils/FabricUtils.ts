@@ -46,6 +46,15 @@ export async function getBlockTimeStamp(dateStr) {
 	return new Date(dateStr);
 }
 
+export async function getTxTimeStamp(dateStr) {
+	try {
+		return new Date(dateStr);
+	} catch (err) {
+		logger.error(err);
+	}
+	return new Date(dateStr);
+}
+
 /**
  *
  *

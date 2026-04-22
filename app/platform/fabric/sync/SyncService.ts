@@ -749,7 +749,9 @@ export class SyncServices {
 			const transaction_row = {
 				blockid: block.header.number.toString(),
 				txhash: txid,
-				createdt: txObj.payload.header.channel_header.timestamp,
+				createdt: await FabricUtils.getTxTimeStamp(
+					txObj.payload.header.channel_header.timestamp
+				),
 				chaincodename: chaincode,
 				chaincode_id,
 				status,

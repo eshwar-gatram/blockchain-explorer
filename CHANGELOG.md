@@ -1,3 +1,18 @@
+## v2.1.0
+
+* [a473068](https://github.com/hyperledger/blockchain-explorer/commit/a473068) build(docker): upgrade node to 16 and fix client build
+* [db21fdd](https://github.com/hyperledger/blockchain-explorer/commit/db21fdd) fix(fabric): ensure consistent timestamp formatting for blocks and transactions
+* [c8104c9](https://github.com/hyperledger/blockchain-explorer/commit/c8104c9) added block search apis endpoint
+* [3fc4180](https://github.com/hyperledger/blockchain-explorer/commit/3fc4180) FrontEnd Additional Search
+* [0b51adb](https://github.com/hyperledger/blockchain-explorer/commit/0b51adb) added block search feature
+* [640fbc7](https://github.com/hyperledger/blockchain-explorer/commit/640fbc7) boottime-feature-UI
+* [718e476](https://github.com/hyperledger/blockchain-explorer/commit/718e476) Adding Boottime Feature
+* [fcae98f](https://github.com/hyperledger/blockchain-explorer/commit/fcae98f) UI - Fetch Latest Block Time to get channels updation time
+* [96ecf13](https://github.com/hyperledger/blockchain-explorer/commit/96ecf13) Latest Block Time Update
+* [7c506ba](https://github.com/hyperledger/blockchain-explorer/commit/7c506ba) Updated packages
+* [f471233](https://github.com/hyperledger/blockchain-explorer/commit/f471233) Fixed package vulnerability
+* [bed8e70](https://github.com/hyperledger/blockchain-explorer/commit/bed8e70) Update Maintainers
+
 ## v2.0.0
 * [898da7e](https://github.com/hyperledger-labs/blockchain-explorer/commit/898da7e) move to ghcr registry (#382)
 * [191ebca](https://github.com/hyperledger-labs/blockchain-explorer/commit/191ebca) updated node version in ci files (#437)

@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 
-FROM node:13-alpine AS BUILD_IMAGE
+FROM node:16-alpine AS BUILD_IMAGE
 
 # default values pf environment variables
 # that are used inside container
@@ -30,7 +30,7 @@ RUN curl -sf https://gobinaries.com/tj/node-prune | sh
 RUN npm install && npm run build && npm prune --production
 
 # build explorer app
-RUN cd client && npm install && npm prune --production && yarn build
+RUN cd client && npm install && npm prune --production && npm run build
 
 # remove installed packages to free space
 RUN apk del npm-deps
@@ -42,7 +42,7 @@ RUN rm -rf node_modules/rxjs/_esm5/
 RUN rm -rf node_modules/rxjs/_esm2015/
 RUN rm -rf node_modules/grpc/deps/grpc/third_party/
 
-FROM node:13-alpine
+FROM node:16-alpine
 
 # database configuration
 ENV DATABASE_HOST 127.0.0.1
